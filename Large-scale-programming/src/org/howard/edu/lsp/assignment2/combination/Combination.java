@@ -12,8 +12,7 @@ public class Combination {
 	 * @param targetSum  the number that the combinations need to add up to.
 	 * @return returnList an ArrayList containing sets of all possible combinations of indexes summing up to the target
 	 */
-	public static ArrayList<String> calculateCombinations(int [] inputList,int targetSum){ 
-	    
+	public  ArrayList<String> calculateCombinations(int [] inputList,int targetSum){ 
 		//ArrayList to store all valid combination indices
 		ArrayList <String> returnList = new ArrayList<String>();
 		
