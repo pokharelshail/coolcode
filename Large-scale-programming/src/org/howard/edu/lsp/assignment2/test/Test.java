@@ -107,10 +107,10 @@ public class Test {
 		System.out.println();	
 		
 		//Test10
-		int [] arr10 = new int[]{-1,3,-1};
-		int target10= 2;
+		int [] arr10 = new int[]{1,6,4,5,2,3,1};
+		int target10= 6;
 	    ArrayList<String> totalCombinations10= test.calculateCombinations(arr10,target10);
-		System.out.println("Test 10- Negative numbers ");
+		System.out.println("Test 10-  ");
 		System.out.println("Inputs  : "+ Arrays.toString(arr10)+ " Target: " +target10);
 		System.out.println("Outputs : "+ totalCombinations10);
 		System.out.println();	
