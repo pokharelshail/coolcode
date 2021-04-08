@@ -6,7 +6,7 @@ public class IntegerSetException extends Exception{
 	 * Constructor for IntegerSetException
 	 * @param message String for custom exception
 	 */
-	IntegerSetException (String message){
+	public IntegerSetException (String message){
 		super(message);
 	}
 
