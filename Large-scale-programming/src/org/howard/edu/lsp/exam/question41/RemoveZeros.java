@@ -2,14 +2,24 @@ package org.howard.edu.lsp.exam.question41;
 
 import java.util.ArrayList;
 
+
 public class RemoveZeros {
 	
-	public void removeZeros(ArrayList<Integer> list) {
-		for (int i =0; i < list.size();i++) {
-			if (list.get(i) == 0) {
-				list.remove(i);
+	
+	/**
+	 * Remove all the zeros from a given list
+	 * @param list is list of integers which may or may not contain zeros
+	 */
+	public void removeZeros(ArrayList<Integer> arr) {
+		for (int i =0; i < arr.size();) {
+			if (arr.get(i) == 0) {
+				arr.remove(i);
+			}else {
+				i++;
 			}
-		}	
+			
+		}
 	}
+	
 
 }
