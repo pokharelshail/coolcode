@@ -34,9 +34,12 @@ public class SongsDatabase {
 	public String getGenreOfSong(String songTitle) {
 		
 			// Code it!!
-		for(Map.Entry<String,Set<String>> gen: map.entrySet()) {
-			if(gen.getValue().contains(songTitle)) //Check if song title is in the genre
-				return gen.getKey();
+		for(String keys: map.keySet()) {
+			for(String val: map.get(keys)) {
+				if (val == songTitle) {
+					return keys;
+				}
+			}
 		}
 		return "**Enter valid song title**";//runs if song title is misspelled
 	}
