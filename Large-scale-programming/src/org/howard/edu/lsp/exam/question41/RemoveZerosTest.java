@@ -30,9 +30,6 @@ class RemoveZerosTest {
 		someZeros = new ArrayList<Integer>(Arrays.asList(1,0,4,0,5,6,7,8,0,9));
 		manyZeros = new ArrayList<Integer>(Arrays.asList(0,0,3,0,0,0,5,0,0));
 	
-		
-			 
-
 	}
 	
 	@AfterEach
@@ -46,9 +43,6 @@ class RemoveZerosTest {
 	}
 	
 	
-	
-	
-
 	@Test
 	@DisplayName("Test case for all zeros ")
 	void testAllZeros() {

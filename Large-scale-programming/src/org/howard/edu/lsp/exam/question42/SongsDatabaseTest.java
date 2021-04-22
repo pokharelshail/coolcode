@@ -9,11 +9,7 @@ public class SongsDatabaseTest {
 	
 	
 	public static void main(String args[]) {
-		
-
-		
 		SongsDatabase db =  new SongsDatabase();
-		
 		db.addSong("Rap","Middle Child");
 		db.addSong("Pop","Shape of You");
 		db.addSong("Rap","Bank Account" );

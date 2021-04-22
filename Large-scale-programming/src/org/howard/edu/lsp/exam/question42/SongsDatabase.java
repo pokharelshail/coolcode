@@ -15,13 +15,11 @@ public class SongsDatabase {
 	public void addSong(String genre, String songTitle) {
 		
 		//If genre already exists then just add song title to genre
-		
-		if (map.containsKey(genre)) {
-			
+		if (map.containsKey(genre)) 
 			map.get(genre).add(songTitle);
-			
-		}
-		else {//If genre doesn't exist make a new genre key and  add the song to it
+		else 
+		{
+			//If genre doesn't exist make a new genre key and  add the song to it
 			map.put(genre, new HashSet<String>());
 			map.get(genre).add(songTitle);
 		}
@@ -37,13 +35,10 @@ public class SongsDatabase {
 		
 			// Code it!!
 		for(Map.Entry<String,Set<String>> gen: map.entrySet()) {
-			if(gen.getValue().contains(songTitle)) {
+			if(gen.getValue().contains(songTitle)) //Check if song title is in the genre
 				return gen.getKey();
-			}
 		}
-		
-		return "**Enter valid song title**";
-		
+		return "**Enter valid song title**";//runs if song title is misspelled
 	}
 
 

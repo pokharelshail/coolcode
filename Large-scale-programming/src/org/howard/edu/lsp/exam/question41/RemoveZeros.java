@@ -12,11 +12,10 @@ public class RemoveZeros {
 	 */
 	public void removeZeros(ArrayList<Integer> arr) {
 		for (int i =0; i < arr.size();) {
-			if (arr.get(i) == 0) {
+			if (arr.get(i) == 0)
 				arr.remove(i);
-			}else {
+			else 
 				i++;
-			}
 			
 		}
 	}
