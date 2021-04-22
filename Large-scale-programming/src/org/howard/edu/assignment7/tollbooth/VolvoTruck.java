@@ -1,23 +1,9 @@
 package org.howard.edu.assignment7.tollbooth;
 
-public class VolvoTruck implements Truck {
-	
+public class VolvoTruck extends Truck {
 	
 	public VolvoTruck(int axels, int weight) {
-		this.axels = axels;
-		this.weight = weight;
+		super(axels,weight);
 	}
-
-	@Override
-	public int getWeight() {
-		return weight;
-	}
-
-	@Override
-	public int getAxels() {
-		return axels;
-	}
-	int axels;
-	int weight;
 
 }
