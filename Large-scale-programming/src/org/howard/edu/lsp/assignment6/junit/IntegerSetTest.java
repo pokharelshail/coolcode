@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.AfterEach;
 import org.howard.edu.lsp.assignment6.integerset.IntegerSet;
 import static org.junit.Assert.assertEquals;
-import org.junit.jupiter.api.Test;
+
 
 class IntegerSetTest {
 	
